@@ -1,0 +1,92 @@
+﻿<Window x:Class="TestTrack.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вход в TestTrack"
+        Height="480" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#F1F5F9">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="#172554">
+            <StackPanel VerticalAlignment="Center"
+                        Margin="28">
+                <TextBlock Text="TestTrack"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Система отслеживания ошибок"
+                           FontSize="14"
+                           Foreground="#BFDBFE"
+                           TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Margin="0,12,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Column="1"
+                    VerticalAlignment="Center"
+                    Margin="45">
+
+            <TextBlock Text="Добро пожаловать!"
+                       FontSize="27"
+                       FontWeight="Bold"
+                       Foreground="#172554"/>
+
+            <TextBlock Text="Войдите в свою учётную запись"
+                       FontSize="14"
+                       Foreground="#64748B"
+                       Margin="0,8,0,28"/>
+
+            <TextBlock Text="Логин"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,7"/>
+
+            <TextBox x:Name="UsernameBox"
+                     Height="40"
+                     FontSize="15"
+                     Padding="10,7"
+                     Margin="0,0,0,18" />
+
+            <TextBlock Text="Пароль"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,7"/>
+
+            <PasswordBox x:Name="PasswordBox"
+                         Height="40"
+                         FontSize="15"
+                         Padding="10,7"
+                         Margin="0,0,0,22"/>
+
+            <Button Content="Войти"
+                    Height="43"
+                    FontSize="16"
+                    FontWeight="SemiBold"
+                    Background="#2563EB"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="LoginButton_Click"/>
+
+            <TextBlock x:Name="MessageText"
+                       Foreground="#DC2626"
+                       TextWrapping="Wrap"
+                       Margin="0,14,0,0"
+                       TextAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
+
+
+
+
+
+
+
